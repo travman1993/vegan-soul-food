@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact – Vegan Soul Food Kitchen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Vegan Soul Food Kitchen with questions, recipe ideas, or collaboration requests.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div>
+        <div class="site-title">Vegan Soul Food Kitchen</div>
+        <div class="tagline">Plant-based Southern comfort, straight from the heart.</div>
+      </div>
+      <nav>
+        <a href="index.html">Recipes</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <h1>Contact</h1>
+    <p>Got a recipe idea, partnership request, or a question about one of the dishes? Send a message below and we’ll get back to you as soon as we can.</p>
+
+    <!-- Replace action with your form handler (Formspree, backend, etc.) -->
+    <form action="#" method="post">
+      <p>
+        <label for="name">Name</label><br>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          required
+          autocomplete="name"
+          style="width:100%;max-width:420px;padding:0.5rem;border-radius:0.4rem;border:1px solid #ccc;">
+      </p>
+
+      <p>
+        <label for="email">Email</label><br>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          required
+          autocomplete="email"
+          style="width:100%;max-width:420px;padding:0.5rem;border-radius:0.4rem;border:1px solid #ccc;">
+      </p>
+
+      <p>
+        <label for="subject">Subject</label><br>
+        <input
+          id="subject"
+          name="subject"
+          type="text"
+          required
+          style="width:100%;max-width:420px;padding:0.5rem;border-radius:0.4rem;border:1px solid #ccc;">
+      </p>
+
+      <p>
+        <label for="message">Message</label><br>
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          required
+          style="width:100%;max-width:420px;padding:0.5rem;border-radius:0.4rem;border:1px solid #ccc;"></textarea>
+      </p>
+
+      <p>
+        <button type="submit" class="btn-outline">Send Message</button>
+      </p>
+
+      <p style="font-size:0.85rem;color:#777;max-width:420px;">
+        By submitting this form you agree that we may use your message to respond to your request. We won’t share your email address for marketing without your consent.
+      </p>
+    </form>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>© <span id="year"></span> Vegan Soul Food Kitchen</div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="cookies.html">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
